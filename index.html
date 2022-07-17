@@ -5,130 +5,154 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>google</title>
-        <style>
-            * {
-                margin: 0;
-                padding: 0;
-            }
-            .wrapper {
-                /* float: right; */
-                display: flex;
-                line-height: 40px;
-                font-size: 14px;
-            }
-            .btn img {
-                width: 40px;
-                height: 40px;
-                position: relative;
-            }
-            .app-list {
-                border: 1px solid #bbb;
-                border-radius: 10px;
-                display: none;
-                grid-template-columns: 1fr 1fr 1fr;
-                justify-items: center;
-                align-items: center;
-                text-align: center;
-                position: absolute;
-            }
-            .app-list > li {
-                list-style: none;
-                margin: 20px 10px;
-            }
-            .app-list > li > span {
-                display: block;
-            }
-            li:nth-child(1) .img {
-                background: url("./main.jpg") no-repeat;
-                background-size: cover;
-                width: 40px;
-                height: 40px;
-                border-radius: 50%;
-            }
-            li:nth-child(2) .img {
-                background: url("./p1_4d827a84.png") no-repeat -10px -1804px;
-                width: 44px;
-                height: 44px;
-            }
-            li:nth-child(3) .img {
-                background: url("./p1_4d827a84.png") no-repeat -16px -492px;
-                width: 32px;
-                height: 47px;
-            }
-            li:nth-child(4) .img {
-                background: url("./p1_4d827a84.png") no-repeat -7px -2637px;
-                width: 49px;
-                height: 34px;
-            }
-            li:nth-child(5) .img {
-                background: url("./p1_4d827a84.png") no-repeat -13px -217px;
-                width: 40px;
-                height: 44px;
-            }
-            li:nth-child(6) .img {
-                background: url("./p1_4d827a84.png") no-repeat -13px -217px;
-                width: 40px;
-                height: 44px;
-            }
-            li:nth-child(7) .img {
-                background: url("./p1_4d827a84.png") no-repeat -10px -2016px;
-                width: 44px;
-                height: 33px;
-            }
-            li:nth-child(8) .img {
-                background: url("./p1_4d827a84.png") no-repeat -10px -704px;
-                width: 44px;
-                height: 36px;
-            }
-            li:nth-child(9) .img {
-                background: url("./p1_4d827a84.png") no-repeat -13px -1669px;
-                width: 38px;
-                height: 40px;
-            }
-            li:nth-child(10) .img {
-                background: url("./p1_4d827a84.png") no-repeat -10px -2908px;
-                width: 44px;
-                height: 44px;
-            }
-            li:nth-child(11) .img {
-                background: url("./p1_4d827a84.png") no-repeat -10px -2979px;
-                width: 44px;
-                height: 39px;
-            }
-            li:nth-child(12) .img {
-                background: url("./p1_4d827a84.png") no-repeat -13px -2566px;
-                width: 38px;
-                height: 38px;
-            }
-            .wrapper > div > .app-list.on {
-                display: grid;
-            }
-        </style>
+        <link rel="stylesheet" href="index.css" />
     </head>
     <body>
         <div class="wrapper">
-            <div>Gmail</div>
-            <div>이미지</div>
-            <div>
-                <div class="btn">
-                    <img src="view_app_grid_icon_180904.png" alt="" />
-                </div>
-                <ul class="app-list">
-                    <li><span class="img"></span>Google 계정</li>
-                    <li><span class="img"></span>검색</li>
-                    <li><span class="img"></span>지도</li>
-                    <li><span class="img"></span>YouTube</li>
-                    <li><span class="img"></span>Play</li>
-                    <li><span class="img"></span>뉴스</li>
-                    <li><span class="img"></span>Gmail</li>
-                    <li><span class="img"></span>Meet</li>
-                    <li><span class="img"></span>채팅</li>
-                    <li><span class="img"></span>주소록</li>
-                    <li><span class="img"></span>드라이브</li>
-                    <li><span class="img"></span>캘린더</li>
+            <header id="header">
+                <ul class="header-left">
+                    <li><a href="#">Google 정보</a></li>
+                    <li><a href="#">스토어</a></li>
                 </ul>
-            </div>
-            <div>프로필</div>
+                <ul class="header-right">
+                    <li><a href="#">Gmail</a></li>
+                    <li><a href="#">이미지</a></li>
+                    <li class="btn">
+                        <img src="view_app_grid_icon_180904.png" alt="" />
+                        <div class="app-list">
+                            <ul class="app-list-1">
+                                <li>
+                                    <span class="img"></span
+                                    ><span class="text">Google 계정</span>
+                                </li>
+                                <li><span class="img"></span>검색</li>
+                                <li><span class="img"></span>지도</li>
+                                <li><span class="img"></span>YouTube</li>
+                                <li><span class="img"></span>Play</li>
+                                <li><span class="img"></span>Gmail</li>
+                                <li><span class="img"></span>Meet</li>
+                                <li><span class="img"></span>주소록</li>
+                                <li><span class="img"></span>드라이브</li>
+                                <li><span class="img"></span>캘린더</li>
+                                <li><span class="img"></span>번역</li>
+                                <li><span class="img"></span>사진</li>
+                                <li><span class="img"></span>Duo</li>
+                                <li><span class="img"></span>쇼핑</li>
+                                <li><span class="img"></span>뉴스</li>
+                                <li><span class="img"></span>채팅</li>
+                            </ul>
+                            <ul class="app-list-2">
+                                <li>
+                                    <span class="img"></span
+                                    ><span class="text">스프레드시트</span>
+                                </li>
+                                <li>
+                                    <span class="img"></span
+                                    ><span class="text">프레젠테이션</span>
+                                </li>
+                                <li>
+                                    <span class="img"></span
+                                    ><span class="text">도서</span>
+                                </li>
+                                <li>
+                                    <span class="img"></span
+                                    ><span class="text">행아웃</span>
+                                </li>
+                                <li>
+                                    <span class="img"></span
+                                    ><span class="text">Blogger</span>
+                                </li>
+                                <li>
+                                    <span class="img"></span
+                                    ><span class="text">아트 앤 컬처</span>
+                                </li>
+                                <li>
+                                    <span class="img"></span
+                                    ><span class="text">클래스룸</span>
+                                </li>
+                                <li>
+                                    <span class="img"></span
+                                    ><span class="text">Jamboard</span>
+                                </li>
+                                <li>
+                                    <span class="img"></span
+                                    ><span class="text">어스</span>
+                                </li>
+                                <li>
+                                    <span class="img"></span
+                                    ><span class="text">Keep</span>
+                                </li>
+                                <li>
+                                    <span class="img"></span
+                                    ><span class="text">컬렉션</span>
+                                </li>
+                                <li>
+                                    <span class="img"></span
+                                    ><span class="text">문서</span>
+                                </li>
+                                <li>
+                                    <span class="img"></span
+                                    ><span class="text">금융</span>
+                                </li>
+                                <li>
+                                    <span class="img"></span
+                                    ><span class="text">Google Ads</span>
+                                </li>
+                                <li>
+                                    <span class="img"></span
+                                    ><span class="text">팟캐스트</span>
+                                </li>
+                                <li>
+                                    <span class="img"></span
+                                    ><span class="text">Google One</span>
+                                </li>
+                                <li>
+                                    <span class="img"></span
+                                    ><span class="text">여행</span>
+                                </li>
+                                <li>
+                                    <span class="img"></span
+                                    ><span class="text">설문지</span>
+                                </li>
+                            </ul>
+                            <div class="more-apps">기타 Google 앱 및 제품</div>
+                        </div>
+                    </li>
+                    <li class="profile"><a href="#">프로필</a></li>
+                </ul>
+            </header>
+            <main id="main">
+                <div class="logo-area">
+                    <img src="googlelogo_color_272x92dp.png" alt="" />
+                </div>
+                <div class="search-area">
+                    <div class="search-box">
+                        <label for="search-input">검색</label>
+                        <input type="search" id="search-input" />
+                        <span class="input-keyboard">입력 도구</span>
+                        <span class="input-voice">음성 검색</span>
+                    </div>
+                    <div class="search-btn-box">
+                        <input type="submit" value="Google 검색" />
+                        <input type="submit" value="I'm Feeling Lucky" />
+                    </div>
+                </div>
+            </main>
+            <footer id="footer">
+                <div class="footer-top">대한민국</div>
+                <div class="footer-bottom">
+                    <ul class="bottom-left">
+                        <li><a href="#">광고</a></li>
+                        <li><a href="#">비즈니스</a></li>
+                        <li><a href="#">검색의 원리</a></li>
+                    </ul>
+                    <ul class="bottom-right">
+                        <li><a href="#">개인정보처리방침</a></li>
+                        <li><a href="#">약관</a></li>
+                        <li><a href="#">설정</a></li>
+                    </ul>
+                </div>
+            </footer>
         </div>
         <script>
             const btn = document.querySelector(".btn");
